@@ -12,7 +12,7 @@ class StratzRequester:
             "Content-Type": "application/json"
         }
 
-    def last_matches(self, player_id: int, number_of_matches: int, *params, skip_matches=0):
+    def last_matches(self, player_id: int, *params, number_of_matches: int=10, skip_matches: int=0):
         """
         Returns list of last matches of player
         :param player_id: ID of a player to return matches
